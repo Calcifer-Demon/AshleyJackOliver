@@ -1,0 +1,151 @@
+/*Färg på hela hemsidan*/
+body{
+    background-color:rgb(250, 246, 246);
+}
+/*Rubrik*/
+.header{
+    font-size: 50px;
+    padding-right: 30px;
+    font-family: Haettenschweiler;
+}
+
+/*placering av rubrik och logotyp*/
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+/*logotyp höjd*/
+.bild{
+    height: 100%;
+    
+}
+/*Nav bar design*/
+nav{
+   padding: 10px;
+    text-align: center;
+    border: 10px double  rgb(0, 0, 0);
+    border-radius: 100px;
+}
+
+nav a{
+  color:rgb(255, 0, 0);
+  text-decoration: none ;
+  border-radius: 4px;
+  padding:10px ;
+  display:inline-block;
+
+}
+
+nav a:hover {
+text-decoration: rgb(255, 255, 255);
+background-color: rgb(255, 0, 0);
+}
+
+/*Nav bar länkar*/
+.bar{
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.info{
+    text-align: center;
+}
+
+.vi{
+    text-align: center;
+    font-size: large;
+}
+
+/*Sektion upplägg, placering*/
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    gap: 5px;
+    padding: 5px;
+    justify-content: space-around;
+    border-width: 5px;
+}
+/*bildernas storlek passar, med egen ram*/
+.flex-container img{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border: double;
+    border-width: 5px;
+}
+
+/*bildernas storlek*/
+.flex-container div{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+
+}
+
+/*länkarnas färg och utan rad under*/
+a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;  
+}
+
+/*länkar hover*/
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+/*footer*/
+footer{
+    text-align: left;
+    color: darkgray;
+    font-size: smaller;
+}
+
+/*placering av separat bild*/
+.om-oss-bild{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+    justify-content: space-around;
+
+
+}
+/*placering av separat bild*/
+.info-bild{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+
+    
+
+/*bildernas storleksföreändring*/
+@media (max-width: 899px) and (min-width: 601px){
+    .flex-container div{
+        width: 50%;
+        
+        
+    }
+}
+
+/*bildernas storleksföreändring*/
+@media (max-width: 600px){
+    .flex-container div{
+        width: 100%;
+        
+        
+    }
+}
+
+
