@@ -21,10 +21,8 @@ function hämtaRecept() {
 // Funktion för att visa recept på sidan
 function visaRecept(receptAttVisa) {
   let receptHTML = "";
-  // Gå igenom varje recept i listan med en for-loop (enligt L6)
   for (let i = 0; i < receptAttVisa.length; i++) {
     const recept = receptAttVisa[i];
-    // Använd backticks för strängmallar (enligt L6)
     receptHTML += `
       <div class="recipe-card">
         <h3>${recept.title}</h3>
