@@ -1,0 +1,30 @@
+header {
+    background-color: rgb(6, 85, 6);
+    font-size: large;
+    font-family:'Franklin Gothic Medium' ;
+    text-align: center;
+}
+h1 {
+    color: orange;
+}
+
+p {
+    color: white;
+}
+
+body {
+    background-color: rgb(214, 214, 214);
+}
+
+nav {
+    text-align: center;
+    border: 10px solid rgb(6, 85, 6);
+    border-radius: 25px;
+    border-width: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: orange;
+    
+}
