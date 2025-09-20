@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mina recept</title>
+  <link rel="stylesheet" href="förmulär.css"> 
+</head>
+<body>
+
+    
+  <!-- Huvudcontainer -->
+  <div class="container">
+
+    <!-- Sidhuvud -->
+    <header>
+      <h1>🍲 Mina Recept</h1>
+      <p>Lägg till, spara och organisera dina recept enkelt</p>
+    </header> <br><br>
+
+    <!-- Formulärsektion -->
+    <main>
+      <section id="recipe-form" class="card"> <br>
+        <h2>Lägg till nytt recept</h2>
+        <br>
+        <form id="addRecipeForm">
+          <div class="form-group"> <br>
+            <label for="title">Recepttitel</label> <br> <br>
+            <input type="text" id="title" required>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Kort beskrivning</label>
+            <textarea id="description" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="ingredients">Ingredienser</label>
+            <textarea id="ingredients" placeholder="glöm ej mätning" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="instructions">Instruktioner</label>
+            <textarea id="instructions" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Spara recept</button>
+        </form>
+      </section>
+
+      <!-- Receptlista -->
+      <section id="recipe-list" class="card">
+        <h2>Mina recept</h2>
+        <div id="recipes"></div>
+      </section>
+    </main>
+
+    
+    <footer>
+      <p>© 2025 Mina Recept App | Skapad av Ashley,Oliver och Jack</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  
+
+  <!-- extern JS-fil -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
