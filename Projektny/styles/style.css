@@ -26,5 +26,18 @@ nav {
 nav a {
     text-decoration: none;
     color: orange;
-    
+    padding: 10px;
+}
+.recipe-card {
+    background-color: rgb(179, 198, 167);
+}
+.recipe-card h3 {
+    color: rgb(230, 149, 1);
+}
+.recipe-card p{
+    color: black;
+}
+
+.recipe-card p strong{
+    color: rgb(255, 255, 255);
 }

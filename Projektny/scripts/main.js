@@ -14,7 +14,7 @@ function hämtaRecept() {
       visaRecept(allaRecept);
     }
   };
-  ajaxForfragan.open("GET", "recipes.json", true);
+  ajaxForfragan.open("GET", "../data/recipes.json", true);
   ajaxForfragan.send();
 }
 
