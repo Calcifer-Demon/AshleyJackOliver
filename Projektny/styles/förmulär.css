@@ -27,6 +27,18 @@ header p {
   color: #070707;
   font-family: cursive;
 }
+nav {
+    text-align: center;
+    border: 10px solid rgb(6, 85, 6);
+    border-radius: 25px;
+    border-width: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: orange;
+    padding: 10px;
+}
 
 .card {
   background: #4ebfa8;

@@ -31,11 +31,14 @@ function visaRecept(receptAttVisa) {
         <p><strong>Instruktioner:</strong> ${recept.instructions}</p>
         <div class="interaction-buttons">
           <button onclick="gillaRecept(${i})">👍 ${recept.likes}</button>
-          <button onclick="kommenteraRecept(${i})">Kommentera</button>
         </div>
-        <div id="kommentarer-${i}" class="kommentarer"></div>
       </div>
     `;
   }
   receptListaDiv.innerHTML = receptHTML;
+}
+
+function gillaRecept(likeknapp) {
+  allaRecept[likeknapp].likes++;
+  visaRecept(allaRecept);
 }
