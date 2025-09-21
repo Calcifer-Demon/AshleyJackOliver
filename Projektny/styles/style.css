@@ -1,20 +1,27 @@
-header {
-    background-color: rgb(6, 85, 6);
-    font-size: large;
-    font-family:'Franklin Gothic Medium' ;
-    text-align: center;
-}
-h1 {
-    color: orange;
-}
-
-p {
-    color: white;
-}
-
 body {
-    background-color: rgb(214, 214, 214);
+    font-family: cursive;
+    background-color: #87e0af;
+    margin: 0;
+  padding: 0;
+  color: #151515;
 }
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+header h1 {
+    padding-top: 20px;
+  font-size: 50px;
+  margin: 10px;
+}
+
+header p {
+  color: #070707;
+  font-family: cursive;
+}
+
 
 nav {
     text-align: center;
@@ -29,7 +36,11 @@ nav a {
     padding: 10px;
 }
 .recipe-card {
-    background-color: rgb(179, 198, 167);
+    background: #4ebfa8;
+    border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(6, 6, 6, 0.1);
 }
 .recipe-card h3 {
     color: rgb(230, 149, 1);
