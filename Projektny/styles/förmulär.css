@@ -29,14 +29,14 @@ header p {
 }
 nav {
     text-align: center;
-    border: 10px solid rgb(6, 85, 6);
+    border: 10px solid #4ebfa8;
     border-radius: 25px;
     border-width: 5px;
 }
 
 nav a {
     text-decoration: none;
-    color: orange;
+    color: black;
     padding: 10px;
 }
 
