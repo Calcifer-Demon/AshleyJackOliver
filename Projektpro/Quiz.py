@@ -8,7 +8,27 @@ class frågor:
         self.alternativ=alternativ
         self.rätt=rätt
 
+def spara_frågor(svar, fönster):
+    frågor_text = svar[0].get()
+    val = [e.get() for e in svar[1:5]]
+    rätt__text = svar[5].get()
 
+    if not all([frågor_text] + val + [rätt__text]):
+        messagebox.showwarning("!","Fyll i alla fält")
+        return
+    
+    if rätt__text not in val:
+        messagebox.showwarning("!", "ett alternativ måste väljas")
+        return
+    
+    with open("quiz_frågor.txt", "a", encoding="utf-8") as fil:
+        fil.write(f"{frågor_text}\n")
+        for i, val in enumerate(val):
+            fil.write(f"val {i}: {val}\n")
+        fil.write(f"rätt svar: {rätt__text}\n")
+
+    messagebox.showinfo("frågan har sparats.")
+    fönster.destroy()
 
 
     
@@ -24,6 +44,11 @@ def frågor_add():
         entry = tk.Entry(add_fönster, width=100)
         entry.pack()
         svar.append(entry)
+    tk.Button(add_fönster, text="spara frågan", command=lambda:spara_frågor(svar, add_fönster)).pack(pady=10)
+
+def frågor_hämta():
+    frågor = []
+
 
 def starta_quiz():
         
