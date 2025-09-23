@@ -29,10 +29,10 @@ def starta_quiz():
         
 
 
-if __name__ == "__main__":
-    if not os.path.exists("quiz_frågor.txt"):
-        with open("quiz_frågor.txt", "w", encoding="utf-8"):
-            pass
+    if __name__ == "__main__":
+        if not os.path.exists("quiz_frågor.txt"):
+            with open("quiz_frågor.txt", "w", encoding="utf-8"):
+                pass
 
     huvud_fönster = tk.Tk()
     huvud_fönster.title("huvudmeny")
