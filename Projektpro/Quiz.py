@@ -17,7 +17,13 @@ def frågor_add():
     add_fönster.title("Lägg till nya frågor")
     add_fönster.geometry("500x500")
 
-
+    svar = []
+    labels_text= ["Fråga:", "Alternativ 1:", "Alternativ 2:", "Alternativ 3:", "Alternativ 4:", "Rätt svar:"]
+    for text in labels_text:
+        tk.Label(add_fönster, text=text).pack(pady=10)
+        entry = tk.Entry(add_fönster, width=100)
+        entry.pack()
+        svar.append(entry)
 
 def starta_quiz():
         
