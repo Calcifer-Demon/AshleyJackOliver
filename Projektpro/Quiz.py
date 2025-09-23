@@ -14,6 +14,8 @@ class frågor:
     
 def frågor_add():
     add_fönster = tk.Toplevel()
+    add_fönster.title("Lägg till nya frågor")
+    add_fönster.geometry("500x500")
 
 
 
@@ -28,7 +30,8 @@ if __name__ == "__main__":
 
     huvud_fönster = tk.Tk()
     huvud_fönster.title("huvudmeny")
-    huvud_fönster.geometry("250x150")
+    huvud_fönster.geometry("500x500")
 
-    tk.Button(huvud_fönster, text="Starta Quiz", command=starta_quiz)
-    tk.Button(huvud_fönster, text="Lägg till frågor", command=frågor_add)
+    tk.Button(huvud_fönster, text="Starta Quiz", command=starta_quiz).pack(pady=10)
+    tk.Button(huvud_fönster, text="Lägg till frågor", command=frågor_add).pack(pady=10)
+    huvud_fönster.mainloop()
