@@ -46,23 +46,16 @@ def frågor_add():
         svar.append(entry)
     tk.Button(add_fönster, text="spara frågan", command=lambda:spara_frågor(svar, add_fönster)).pack(pady=10)
 
-def frågor_hämta():
-    frågor = []
 
-
-def starta_quiz():
         
 
-
-    if __name__ == "__main__":
-        if not os.path.exists("quiz_frågor.txt"):
-            with open("quiz_frågor.txt", "w", encoding="utf-8"):
-                pass
-
-    huvud_fönster = tk.Tk()
-    huvud_fönster.title("huvudmeny")
-    huvud_fönster.geometry("500x500")
-
-    tk.Button(huvud_fönster, text="Starta Quiz", command=starta_quiz).pack(pady=10)
-    tk.Button(huvud_fönster, text="Lägg till frågor", command=frågor_add).pack(pady=10)
-    huvud_fönster.mainloop()
+if __name__ == "__main__":
+    if not os.path.exists("quiz_frågor.txt"):
+        with open("quiz_frågor.txt", "w", encoding="utf-8"):
+            pass
+        huvud_fönster = tk.Tk()
+        huvud_fönster.title("huvudmeny")
+        huvud_fönster.geometry("500x500")
+        tk.Button(huvud_fönster, text="Starta Quiz").pack(pady=10)
+        tk.Button(huvud_fönster, text="Lägg till frågor", command=frågor_add).pack(pady=10)
+        huvud_fönster.mainloop()
